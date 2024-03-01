@@ -181,7 +181,7 @@ app.post('/update-card', async (req, res) => {
 });
 
 
-app.post("/login", (req, res) => {
+app.post("ms6620065-gmail-com-cuvette-final-evaluation-july-front.vercel.app", (req, res) => {
     try {
         const { email, password } = req.body
         User.findOne({ email: email }, async (err, user) => {
