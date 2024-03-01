@@ -1,0 +1,68 @@
+.setting-user-icon{
+    position: absolute;
+    top: 13.5%;
+    left: 240px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a1a1a1;
+}
+
+.setting-eye-icon{
+    position: absolute;
+    top: 21%;
+    left: 470px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a1a1a1;
+}
+
+.setting-loc1-icon{
+    position: absolute;
+    top: 20.5%;
+    left: 240px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a1a1a1;
+}
+
+.setting-loc2-icon{
+    position: absolute;
+    top: 28%;
+    left: 240px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a1a1a1;
+}
+
+.setting-eye-repas{
+    position: absolute;
+    top: 28.5%;
+    left: 470px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a1a1a1;
+}
+/* .lock-repas{
+    position: absolute;
+    top: 64.5%;
+    right: 280px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a1a1a1;
+  } */
+  /* .reg-eye-icon{
+    position: absolute;
+    top: 56%;
+    right: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a1a1a1;
+  }
+  .reg-user-icon{
+    position: absolute;
+    top: 38%;
+    right: 280px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a1a1a1;
+  } */

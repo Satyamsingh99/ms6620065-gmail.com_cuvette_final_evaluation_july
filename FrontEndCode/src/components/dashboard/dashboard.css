@@ -1,0 +1,558 @@
+.dashBoard{
+    display: flex;
+    overflow: hidden;
+}
+
+.dashBoard-nav{
+    width: 17%;
+}
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100vh;
+    overflow: auto;
+    /* border: 1px solid black; */
+    border-right: 1px solid #EDF5FE
+    /* position: fixed; */
+}
+
+.sidebar a{
+    display: block;
+    color: black;
+    padding: 16px 16px 16px 50px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar a.active{
+    background: linear-gradient(0deg, #EDF5FE, #EDF5FE),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    
+}
+
+.sidetabs{
+    width: inherit;
+}
+
+.button{
+    color: red;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100wh;
+    padding: 15px 15px 0 10px;
+}
+
+.head h1{
+    font-family: Poppins;
+font-size: 15px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 25px;
+}
+
+.date-box {
+    width: fit-content;
+    padding:inherit;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+.boxes{
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 78vh;
+    scroll-behavior: smooth;
+    background: #EEF2F5;
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom:0 ;
+}
+.box-container{
+  
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+.backlogcard{
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  margin: 10px;
+
+}
+
+.add-button {
+    /* position: absolute; */
+    /* width: 40px;
+    height: 40px; */
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .main-container {
+    flex-grow: 1;
+    width: 81%;
+  }
+  
+  .analytics-content{
+    width: 100vw;
+  }
+
+  .analytics-content header{
+    padding: 20px;
+  }
+  .analytics{
+    display: flex;
+  }
+
+  .analytics-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin: 10px;
+    width: 300px;
+    height: 164px;
+    top: 105px;
+    left: 268px;
+    border-radius: 12px;
+    background: #F9FCFF;
+    /* border: 1px solid blue; */
+  }
+  .analytics-box ul li{
+    line-height: 40px;
+  }
+
+  .analytics-box ul li::marker{
+    color: #90C4CC;
+    font-size: 1.5rem;
+  }
+
+  .no-bullet{
+    list-style: none;
+  }
+  .settings-content{
+    width: 100vw;
+  }
+
+  .settings-content header{
+    padding: 20px;
+  }
+  .settings{
+    display: flex;
+  }
+
+  .settings{
+    display: flex;
+    flex-direction: column;
+    gap:10px ;
+    margin-left: 15px;
+  }
+
+  .updateButton{
+    background: #17A2B8;
+    color:#fff;
+    cursor: pointer;
+  }
+
+  .settings > input{
+    border: 1.38px solid #D0D0D0;
+    width: 205px;
+    height: 25px;
+    padding: 3px 28px;
+    border-radius: 8.03px;
+}
+ input:focus {
+    border: 1.38px solid #D0D0D0; /* Change to whatever color you want */
+  }
+
+  .todoHeader{
+    /* width: -webkit-fill-available; */
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    flex-direction: row;
+
+  }
+
+  
+  /* CSS for Popup box for todo */
+
+  /* .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+  /* .maincard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+  } */
+/*   
+  .maincard button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+   */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+  }
+
+  /* .app{
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(90, 90, 90, 0.5);
+      z-index: 9999;
+  } */
+  
+  /* .popup input[type="text"], .popup .checklists input[type="text"] {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+  } */
+  
+  .title-feild input{
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    border: #c5c2c2 1px solid;
+    margin-bottom: 15px;
+    padding: 0px 0 0px 10px;
+    font-size: 10px;
+  }
+
+  .popup label{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+
+
+  /* .priority-buttons button {
+    margin-right: 10px;
+  } */
+  
+  /* .checklists .checklist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  } */
+  
+  .checklists .checklist-item button {
+    margin-left: 10px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    /* margin: 15px; */
+  }
+
+  .title-feild{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .priority-feild{
+    display: flex;
+  }
+
+  .checklists{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 200px;
+  }
+
+  .checklists-feild{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checklists-feild label{
+    margin-bottom: 20px;
+  }
+
+  .act-btn{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20px;
+    width: -webkit-fill-available;
+    right: 0px;
+  }
+
+  .act-btn .btn{
+    margin: 3px;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+  }
+
+  .priority-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .priority-buttons button{
+    margin: 3px;
+    height: 25px;
+    width: 95px;
+    border-radius: 5px;
+    font-size: 7px;
+    background-color: white;
+    border: #c5c2c2 1px solid;
+    cursor: pointer;
+  }
+  .priority-buttons .red{
+    color: red;
+    font-size: 15px;
+  }
+
+  .priority-buttons .blue{
+    color: rgb(15, 170, 231);
+    font-size: 15px;
+  }
+
+  .priority-buttons .green{
+    color: green;
+    font-size: 15px;
+  }
+
+  .indentation{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  /* .priority-buttons High::before {
+    content: "•";
+    color: red;
+    /* position: absolute;
+    left: -20px; */
+/*   
+  .blue-button::before {
+    content: "•";
+    color: blue;
+    position: absolute;
+    left: -20px;
+  }
+  
+  .green-button::before {
+    content: "•";
+    color: green;
+    position: absolute;
+    left: -20px;
+  } */
+
+  .priority{
+    font-size: 10px;
+  }
+
+  .checklists button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 0;
+    width: 90px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #767575;
+  }
+
+  .checklist-item{
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    height: 30px;
+    border-radius: 15px;
+    border: #c5c2c2 1px solid;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+  }
+
+  .check-input{
+    display: flex;
+    align-items: center;
+  }
+
+  .check-input input[type=text]:focus {
+    border: 0px solid white;
+    outline: none;
+  }
+
+  .checklist-text{
+    margin: 0 8px;
+    width: 280px; 
+    height: 25px; 
+    border: none;
+  }
+
+  .checklist-item button{
+    font-size: x-large;
+    color: darkred;
+    /* background-color: yellow; */
+    width: 30px;
+  }
+  .update-password-button{
+    width: 263px;
+    height: 30px;
+    border: 1.38px solid #17A2B8;
+    border-radius: 55.13px;
+}
+.card-background{
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left: 0;
+  position: fixed;
+  background: #303D438C;
+}
+
+/* .logout-popup{
+  width: 335.19px;
+  height: 200px;
+  top: 412px;
+  left: 616px;
+  border-radius: 10.91px;
+  background-color: #17A2B8;
+  border: 1px solid black;
+} */
+
+.logout-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 340px;
+  height: 200px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logout-popup p{
+    margin-top: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.logout-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 320px;
+}
+
+.logout-buttons button{
+  height: 43px;
+  border-radius: 12px;
+  font-size: larger;
+  margin-bottom: 15px;
+}
+
+.logout{
+color:white;
+background-color: #17A2B8;
+border: none;
+}
+
+.cancel{
+  border: 1px solid #CF3636;
+  color: #CF3636;
+  background-color: white;
+}
+
+.headnfilter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+    right: 10px;
+    top: 60px;
+    position: absolute;
+    display: inline-block;
+}
+
+.selected-option {
+  cursor: pointer;
+  padding: 10px;
+  /* margin-right: 15px; */
+
+  /* border: 1px solid #ccc; */
+}
+
+.options {
+  /* position: absolute; */
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 22px 0px #7E7A7A40;
+  border-radius: 12px;
+}
+
+.options div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.options div:hover {
+  background-color: #f0f0f0;
+}
+
+
