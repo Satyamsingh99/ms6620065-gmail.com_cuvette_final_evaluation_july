@@ -19,13 +19,16 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
 
-mongoose.connect(process.env.MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}, (error1) => {
-    console.log(error1)
+// mongoose.connect(process.env.MONGODB_URL, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// }, (error1) => {
+//     console.log(error1)
 
-})
+// })
+
+mongoose.connect(mongodb+srv://manvendrasingh:manvendra123@cluster0.8iflvjz.mongodb.net/?retryWrites=true&w=majority)
+                 
 const cardSchema = new mongoose.Schema({
     title: String,
     priority: String,
